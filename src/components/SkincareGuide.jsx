@@ -21,7 +21,40 @@ const SkincareGuide = () => {
       precautions: 'Start slowly, use sunscreen during day',
       color: 'bg-orange-100'
     },
-      
+    vitaminC: {
+      name: 'Vitamin C',
+      description: 'Antioxidant that brightens skin and fights free radicals',
+      timeOfDay: 'day',
+      benefits: ['Brightens complexion', 'Protects from UV damage', 'Boosts collagen'],
+      pairsWellWith: ['Sunscreen', 'Vitamin E'],
+      avoidCombiningWith: ['Retinol', 'Niacinamide'],
+      skinTypes: ['all'],
+      precautions: 'Store in dark bottle, use within 3 months',
+      color: 'bg-yellow-100'
+    },
+    niacinamide: {
+      name: 'Niacinamide',
+      description: 'Versatile ingredient that helps with multiple skin concerns',
+      timeOfDay: 'both',
+      benefits: ['Reduces pore size', 'Controls oil', 'Strengthens skin barrier'],
+      pairsWellWith: ['Hyaluronic Acid', 'Peptides'],
+      avoidCombiningWith: ['Vitamin C'],
+      skinTypes: ['all'],
+      precautions: 'Start with lower concentration',
+      color: 'bg-blue-100'
+    },
+    salicylicAcid: {
+      name: 'Salicylic Acid',
+      description: 'BHA that exfoliates and unclogs pores',
+      timeOfDay: 'both',
+      benefits: ['Treats acne', 'Exfoliates skin', 'Reduces inflammation'],
+      pairsWellWith: ['Niacinamide', 'Hyaluronic Acid'],
+      avoidCombiningWith: ['Retinol', 'Other exfoliants'],
+      skinTypes: ['oily', 'combination', 'acne-prone'],
+      precautions: 'May cause dryness, use sunscreen',
+      color: 'bg-green-100'
+    }
+  };  
   };
 
   const skinTypes = [
@@ -55,6 +88,5 @@ const SkincareGuide = () => {
       </CardContent>
     </Card>
   );
-};
 
 export default SkincareGuide;
